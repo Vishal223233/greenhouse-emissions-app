@@ -53,4 +53,21 @@ export default tseslint.config({
   },
 })
 
+Notes & Future Enhancements
+Caching & Performance
 
+We would like to integrate React Query (TanStack Query) or a similar library to cache responses from the World Bank API. This avoids repeated network calls when toggling filters or returning to previously viewed data.
+Local or session storage caching might also help offline or low-bandwidth scenarios.
+Pagination & Large Data
+
+For very large date ranges or multiple countries, data can get big. Adding partial queries or pagination can improve performance.
+Additional Visualizations
+
+A map-based visualization of emissions or a comparison with population or GDP data could offer more insights.
+Pie or donut charts for sector-wise breakdown, if the data is available.
+User Profiles / Auth
+
+If we needed to persist user-specific configurations (e.g., saving chart preferences), we’d integrate an auth layer and store user settings.
+Better Error Handling & Logging
+
+More descriptive error messages for network failures, timeouts, or missing data fields from the API.
